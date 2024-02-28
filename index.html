@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/tab.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <title>LA Mountains SPA</title>
+  </head>
+  <body>
+    <header id="mountain-1">
+      <div class="header-container">
+        <nav>
+          <img
+            id="header-logo"
+            src="images/la-mount-logo.png"
+            alt="Logo Image"
+          />
+          <ul class="header-ul">
+            <li><a href="#history-section">01. History</a></li>
+            <li><a href="#team-section">02. Team</a></li>
+          </ul>
+        </nav>
+        <h1 class="header-text">
+          LOSANGELES <span id="mount">MOUNTAINS</span>
+        </h1>
+      </div>
+    </header>
+    <div class="mid-section">
+      <div class="mid-text-logo">
+        <div class="mid-logo-flex"></div>
+        <div class="mid-text">
+          <img id="mid-logo" src="images/la-mount-logo.png" alt="Logo Image" />
+          <div class="mid-logo-text">
+            <h3 class="">LOSANGELES</h3>
+            <h3><span id="mid-mount">MOUNTAINS</span></h3>
+          </div>
+        </div>
+        <ul class="mid-ul">
+          <li><a href="#history-section">01. History</a></li>
+          <li><a href="#team-section">02. Team</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main id="mountain-2">
+      <section id="history-section">
+        <div class="history">
+          <h2 class="history-text-color">01</h2>
+          <h2 class="history-text">
+            HISTORY<span class="history-dot history-text-color"></span>
+          </h2>
+        </div>
+        <p class="history-text-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, magnam
+          at amet quo odit qui minima reprehenderit sunt maxime adipisci
+          blanditiis quibusdam totam. Repellat iste laboriosam beatae
+          consequatur nulla voluptas velit laudantium, blanditiis nihil suscipit
+          dolorum atque porro ex, perspiciatis expedita sed tempore mollitia
+          cum! Repellendus dolorem beatae recusandae iste et explicabo ullam
+          consequuntur possimus!
+        </p>
+      </section>
+      <div class="history-image-container">
+        <div class="my-slides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/carousel-1.jpeg" alt="Carousel Image" />
+        </div>
+
+        <div class="my-slides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/carousel-2.jpeg" alt="Carousel Image" />
+        </div>
+
+        <div class="my-slides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/carousel-3.jpeg" alt="Carousel Image" />
+        </div>
+
+        <div class="my-slides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/carousel-4.jpeg" alt="Carousel Image" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+      </div>
+
+      <section id="team-section">
+        <div class="climb">
+          <h2 class="climb-text-color">02</h2>
+          <h2 class="climb-text">
+            CLIMB<span class="climb-dot climb-text-color"></span>
+          </h2>
+        </div>
+        <p class="climb-text-paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Necessitatibus, quae possimus. Aperiam libero doloremque reprehenderit
+          recusandae quas cumque modi laboriosam suscipit?
+        </p>
+      </section>
+
+      <div class="schedule-div">
+        <div>
+          <ul class="schedule-tab">
+            <li><a href="#mountain-1">MOUNTAIN 1</a></li>
+            <li><a href="#mountain-2">MOUNTAIN 2</a></li>
+          </ul>
+        </div>
+
+        <table class="schedule-section">
+          <thead>
+            <tr>
+              <th colspan="2">SCHEDULE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>25 Nov 2016</td>
+              <td>Vestibulum vivera</td>
+            </tr>
+            <tr>
+              <td>28 Nov 2016</td>
+              <td>Vestibulum vivera</td>
+            </tr>
+            <tr class="space">
+              <td>18 Dec 2016</td>
+              <td>Vestibulum vivera</td>
+            </tr>
+            <tr class="space">
+              <td>07 Jan 2017</td>
+              <td>Vestibulum vivera</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer id="footer-container">
+        <div class="mid-section">
+          <div class="footer-text-logo">
+            <img
+              id="footer-logo"
+              src="images/la-mount-logo.png"
+              alt="Logo Image"
+            />
+            <div class="mid-logo-text">
+              <h3 class="">LOSANGELES</h3>
+              <h3><span id="footer-mount">MOUNTAINS</span></h3>
+            </div>
+          </div>
+        </div>
+        <p class="copy-rights">
+          COPYRIGHT <span id="year"></span>. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

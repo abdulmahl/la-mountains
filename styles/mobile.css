@@ -1,0 +1,318 @@
+
+/* Styling  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Times New Roman', Times, serif;
+}
+
+header,
+main,
+footer#footer-container {
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+header {
+  background-image: url("/images/la-mount.jpeg");
+  background-repeat: no-repeat;
+  height: 47vh;
+}
+
+main {
+  background-image: url("/images/la-mount-4.jpeg");
+  background-repeat: no-repeat;
+}
+
+/* Styling for the header section */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+ul.header-ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-left: 5rem;
+}
+
+ul.header-ul a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.header-ul a:hover,
+.mid-ul a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.header-text {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+#mount {
+  font-size: 36px;
+}
+
+/* header {
+} */
+
+#header-logo {
+  max-width: 10%;
+}
+
+/* Head section end */
+
+/* Styling for mid section */
+#mid-logo {
+  max-width: 10%;
+  margin-left: 1rem;
+}
+
+.mid-text-logo {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0;
+  color: #333;
+}
+
+.mid-text {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 0.3rem;
+}
+
+.mid-text-logo h3 {
+  font-size: 0.7rem;
+}
+
+.mid-ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.mid-ul a {
+  text-decoration: none;
+  color: #333;
+}
+
+#mid-mount {
+  font-size: 0.79rem;
+}
+
+/* Mid section ends */
+
+/* Styling for history and climb section */
+.history,
+.climb {
+  display: grid;
+  grid-template-columns: 25px 10px;
+  padding: 2rem 1rem 0rem;
+  align-items: center;
+  color: #333;
+}
+
+.history-text-color {
+  color: aliceblue;
+}
+
+.history-text,
+.climb-text {
+  display: grid;
+  font-size: small;
+  gap: 0;
+}
+
+.history-dot {
+  background-color: aliceblue;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.climb-dot {
+  background-color: #333;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.history-text-paragraph,
+.climb-text-paragraph {
+  padding: 0rem 2rem 2rem;
+}
+
+.history-image-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(242, 242, 237, 0.8);
+}
+
+.numbertext {
+  color: #110f0f;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-container {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.my-slides {
+  display: none;
+}
+
+.my-slides img {
+  width: 100%;
+}
+
+/* Styling for history / climb ends */
+
+/* Styling for schedule starts here */
+
+.schedule-div {
+  background-image: url("/images/la-mount-3.jpeg");
+  background-repeat: no-repeat;
+  height: 48vh;
+}
+
+.schedule-tab {
+  display: flex;
+  background-color: rgba(1, 1, 17, 0.5);
+  height: 35px;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.8rem;
+  list-style: none;
+  padding: 2rem 0;
+}
+
+.schedule-tab a {
+  text-underline-offset: 0.5rem;
+  color: rgba(188, 192, 188, 10);
+  text-decoration: none;
+}
+
+.schedule-tab a:hover {
+  background-color: #333;
+  padding: 22px 0;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.schedule-section {
+  background-color: rgb(188, 192, 188, 0.5);
+  width: 80%;
+  height: 40%;
+  padding: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+th {
+  padding: 1rem 0;
+}
+
+.space td {
+  padding-top: 1rem;
+}
+
+footer {
+  background-color: rgba(1, 1, 17, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-text-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  gap: 0.3rem;
+}
+
+#footer-mount {
+  font-size: 1.3rem;
+}
+
+#footer-logo {
+  width: 18%;
+}
+
+.copy-rights {
+  text-align: center;
+  padding: 0.5rem 0rem 2rem;
+}
